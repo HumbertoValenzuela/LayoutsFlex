@@ -1,0 +1,78 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    text-align: center;
+}
+
+/* Centrado */
+.centrado {
+    display: flex;    
+    justify-content: center;   
+    align-items: center;       
+    background-image: url(../img/hamburguesa.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.contenido-centrado h1{
+      color: #e0ab10;
+      text-transform:uppercase;
+      margin: 0;
+}
+.contenido-centrado{
+    text-align: center;
+}
+
+.contenido-centrado p{
+    color: #e0ab10;
+    text-transform:uppercase;
+    margin: 0;
+}
+
+.contenido-centrado .ubicacion{
+    font-weight: 900;
+    font-size: 1.4rem;
+} 
+
+.aviso {
+    background-color: #e0ab10;
+    padding: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.aviso span {
+    font-size: 3rem;
+    display:block;
+}
+/* Como dar mismo tamaño y dejar uno arriba y abajo */
+/* .centrado > div solo selecciona el primer nivel de hijos  */
+/* gracias a centrado que tiene flex */
+.centrado > div {
+    /*  hacia los costados */
+    flex: 0 0 calc(38% - 4rem);
+}
+.arriba {
+    align-self:flex-start;
+    margin-top: 1rem;
+}
+
+.abajo {
+    align-self: flex-end;
+    margin-bottom: 1rem;
+}
